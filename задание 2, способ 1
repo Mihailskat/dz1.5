@@ -1,0 +1,9 @@
+n = 0
+
+for i in range(1001):
+  arr = np.random.randint(1, 10, size=100)
+  a = (arr > 7).sum()/100*100
+  if a == 20:
+    n += 1
+  result = n/1000
+print(result)
