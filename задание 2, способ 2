@@ -1,0 +1,4 @@
+arr = np.random.randint(1, 10, size=100000)
+arr = arr.reshape((1000, 100))
+a = (arr>7).sum(axis=1)
+(a == 20).sum()/len(a)
